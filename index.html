@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090e">
+  <meta name="description" content="Портфолио Виталия — проекты Animduo и Teto Bot.">
+  <title>Виталий — portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307090e'/%3E%3Cpath d='M16 17h32v8H37v24H27V25H16z' fill='%23ff334f'/%3E%3Cpath d='M37 17h11v8H37z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+  <div class="noise" aria-hidden="true"></div>
+
+  <section class="gate" id="gate" aria-label="Экран входа">
+    <div class="gate-glow"></div>
+    <div class="gate-content">
+      <span class="gate-kicker">MODER42 / PERSONAL SPACE</span>
+      <h1>Добро пожаловать<br><span>в моё пространство</span></h1>
+      <button class="enter-button" id="enterButton" type="button">
+        <span>Войти</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M14 7l5 5-5 5"/></svg>
+      </button>
+      <p>Нажатие запустит случайный трек</p>
+    </div>
+  </section>
+
+  <main id="page" aria-hidden="true">
+    <nav class="nav shell" aria-label="Основная навигация">
+      <a class="brand" href="#top" aria-label="В начало">M<span>42</span></a>
+      <div class="nav-links">
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+      </div>
+      <a class="telegram-nav" href="https://t.me/moder42_Dev" target="_blank" rel="noreferrer">Telegram</a>
+    </nav>
+
+    <section class="profile-section shell" id="top">
+      <div class="profile-card" id="about">
+        <div class="profile-main">
+          <div class="profile-avatar">
+            <img src="assets/avatar.jpg" alt="Аватар Виталия">
+            <span>01 / PROFILE</span>
+          </div>
+
+          <div class="profile-about">
+            <div class="eyebrow"><span></span> developer · creator</div>
+            <h1>Виталий<span class="dot">.</span></h1>
+            <a class="profile-telegram" href="https://t.me/moder42_Dev" target="_blank" rel="noreferrer">@moder42_Dev <span>↗</span></a>
+            <div class="about-copy">
+              <span>Обо мне</span>
+              <p>Создаю сервисы, сайты и Telegram-ботов. Более подробное описание появится здесь немного позже.</p>
+            </div>
+            <a class="primary-link" href="#projects">Смотреть проекты</a>
+          </div>
+        </div>
+
+        <div class="profile-meta">
+          <div class="profile-meta-item">
+            <span>Локация</span>
+            <strong>Барнаул, Алтайский край</strong>
+          </div>
+          <div class="profile-meta-item">
+            <span>Моё время</span>
+            <strong class="time" id="localTime">--:--</strong>
+            <small>МСК +4</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects shell" id="projects">
+      <header class="section-heading">
+        <div>
+          <span class="section-number">02</span>
+          <h2>Избранные проекты</h2>
+        </div>
+        <p>То, над чем я работаю</p>
+      </header>
+
+      <div class="project-list">
+        <a class="project-card project-anime" href="https://anim-duo.moder42.tech" target="_blank" rel="noreferrer">
+          <div class="project-visual">
+            <img src="assets/animduo-cover.webp" alt="Обложка проекта Animduo" loading="lazy">
+            <span class="project-badge">ANIME PLATFORM</span>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>Web service</span><span>2026</span></div>
+            <h3>Animduo</h3>
+            <p>Сервис для просмотра аниме.</p>
+            <span class="project-open">Открыть проект ↗</span>
+          </div>
+        </a>
+
+        <a class="project-card project-bot" href="https://t.me/Iris_moder42_bot" target="_blank" rel="noreferrer">
+          <div class="project-visual">
+            <img src="assets/teto-bot-cover.webp" alt="Обложка Telegram-бота Teto Bot" loading="lazy">
+            <span class="project-badge">TELEGRAM BOT</span>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>Telegram bot</span><span>Active</span></div>
+            <h3>Teto Bot</h3>
+            <p>Бот для администрирования Telegram-чатов.</p>
+            <span class="project-open">Открыть в Telegram ↗</span>
+          </div>
+        </a>
+
+        <a class="project-card project-site" href="https://teto.moder42.tech" target="_blank" rel="noreferrer">
+          <div class="project-visual">
+            <img src="assets/teto-site-cover.webp" alt="Обложка сайта Teto Bot" loading="lazy">
+            <span class="project-badge">PRODUCT SITE</span>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>Product site</span><span>2026</span></div>
+            <h3>Teto Bot — сайт</h3>
+            <p>Подробная информация о возможностях Telegram-бота Teto Bot.</p>
+            <span class="project-open">Открыть проект ↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer shell">
+      <div><span>Давайте создадим что-нибудь</span><strong>интересное.</strong></div>
+      <a href="https://t.me/moder42_Dev" target="_blank" rel="noreferrer">Написать в Telegram ↗</a>
+      <small>© <span id="year"></span> Виталий / moder42</small>
+    </footer>
+  </main>
+
+  <aside class="player" id="player" aria-label="Музыкальный плеер">
+    <button class="player-main" id="playPause" type="button" aria-label="Пауза">
+      <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+      <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z"/></svg>
+    </button>
+    <div class="player-track">
+      <span>Сейчас играет</span>
+      <strong id="trackName">Музыка скоро появится</strong>
+    </div>
+    <div class="progress" id="progress" role="slider" aria-label="Позиция трека" tabindex="0"><i id="progressBar"></i></div>
+    <span class="player-time" id="playerTime">0:00</span>
+    <button class="player-skip" id="nextTrack" type="button" aria-label="Следующий трек">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 9 6-9 6zM17 6h2v12h-2z"/></svg>
+    </button>
+    <button class="player-volume" id="muteButton" type="button" aria-label="Выключить звук">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6L8 10H4zm12.5-1.5a5 5 0 0 1 0 7"/></svg>
+    </button>
+  </aside>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
